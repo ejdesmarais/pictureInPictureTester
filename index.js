@@ -50,13 +50,13 @@ let reloadBtn = document.getElementById('reload');
 if(params.has('localvideo')) {
     logui("Detected intent to use mp4");
     document.querySelector('.rtcc-local-view').src = "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4";
-    reloadBtn.innerText += "camera";
+    reloadBtn.innerText += " camera instead";
     reloadBtn.addEventListener('click',() => {
         window.location = window.location.href.split('?')[0];
     });
 } else {
     logui("Detected intent to use camera");
-    reloadBtn.innerText += "mp4";
+    reloadBtn.innerText += " mp4 instead";
     reloadBtn.addEventListener('click',() => {
         window.location = window.location.href.split('?')[0] + "?localvideo=true";
     });

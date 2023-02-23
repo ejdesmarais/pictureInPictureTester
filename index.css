@@ -1,0 +1,20 @@
+.videodiv {
+    text-align: center;
+    margin: 20px auto;
+    border: solid 1px black;
+}
+.log-header {
+    text-align:center; font-weight: bold; color:red;
+}
+button {
+    width: 150px;
+    height: 40px;
+}
+#logdiv {
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 3px;
+    height: 120px;
+    overflow-y: auto;
+    overflow-x: auto;
+}

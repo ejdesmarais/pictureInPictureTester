@@ -1,38 +1,23 @@
 <!DOCTYPE html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PiP Test</title>
-        <style type="text/css">
-            .videodiv {
-                margin-top: 20px auto;
-                border: solid 1px black;
-            }
-            button {
-                width: 150px;
-                height: 40px;
-            }
-            #logdiv {
-                border: solid 1px black;
-                border-radius: 4px;
-                padding: 3px;
-                height: 120px;
-                overflow-y: auto;
-                overflow-x: auto;
-            }
-        </style>
+        <title>requestPictureInPicture() Test</title>
+        <link href="index.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <div class="videodiv">
-            <!--<video class="rtcc-local-view" src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4" id="video" playsinline  muted autoplay width="300"></video>
-            //-->
             <video class="rtcc-local-view" id="video" playsinline muted autoplay width="300"></video>
-            <button class="rtcc-pip-button">PiP</button>
-            <button class="rtcc-pip-safari-button">Toggle using webkit</button>
-            <button id="reload">Use </button>
-            <button id="playbtn">Play/Pause</button>
+            <div class="button-div">
+                <button class="rtcc-pip-button">PiP (Web API)</button>
+                <button class="rtcc-pip-safari-button">PiP (Webkit)</button>
+                <button id="reload">Use </button>
+                <button id="playbtn">Play/Pause Video</button>
+            </div>
         </div>
         <div id="logdiv">
-            <p id="logp"></p>
+            <p id="logp">
+                <span class="log-header">Console log messages<br />--------------------------<br /></span>
+            </p>
         </div>
     </body>
     <script type="text/javascript" src="index.js"></script>
